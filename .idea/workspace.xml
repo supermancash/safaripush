@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f0566a84-f6b6-42a6-9784-963338b0ab76" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/bin/www" beforeDir="false" afterPath="$PROJECT_DIR$/backend/bin/www" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/web.config" beforeDir="false" afterPath="$PROJECT_DIR$/web.config" afterDir="false" />
-    </list>
+    <list default="true" id="f0566a84-f6b6-42a6-9784-963338b0ab76" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -38,10 +37,11 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="javascript.nodejs.core.library.configured.version" value="14.15.1" />
-    <property name="javascript.nodejs.core.library.typings.version" value="14.17.20" />
+    <property name="javascript.nodejs.core.library.configured.version" value="14.0.0" />
+    <property name="javascript.nodejs.core.library.typings.version" value="14.0.0" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="settings.editor.selected.configurable" value="http.proxy" />
   </component>
@@ -50,6 +50,18 @@
       <recent name="C:\0\vc\safariPush" />
       <recent name="C:\0\vc\safariPush\backend" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="start" type="js.build_tools.npm" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -62,6 +74,7 @@
       <workItem from="1633338767942" duration="498000" />
       <workItem from="1633339280977" duration="2897000" />
       <workItem from="1633342370795" duration="25000" />
+      <workItem from="1633438447340" duration="48000" />
     </task>
     <servers />
   </component>
@@ -70,23 +83,5 @@
   </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.config" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="740" y="241" key="FileChooserDialogImpl" timestamp="1633339257296">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="740" y="241" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1633339257296" />
-    <state x="832" y="419" width="649" height="376" key="Github.ShareDialog" timestamp="1633340803153">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="832" y="419" width="649" height="376" key="Github.ShareDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1633340803153" />
-    <state x="792" y="219" width="962" height="714" key="Github.UntrackedFilesDialog" timestamp="1633340828773">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="792" y="219" width="962" height="714" key="Github.UntrackedFilesDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1633340828773" />
-    <state x="669" y="130" width="581" height="780" key="find.popup" timestamp="1633339897392">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="669" y="130" width="581" height="780" key="find.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1633339897392" />
   </component>
 </project>
