@@ -1,9 +1,20 @@
-function buttonHandler () {
+async function buttonHandler () {
     if ('safari' in window && 'pushNotification' in window.safari) {
         let permissionData = window.safari.pushNotification.permission('web.app.netlify.webpush');
         checkRemotePermission(permissionData);
         console.log("safari");
     }
+    let responseData, responseBody;
+    await fetch('/v1/log/showthem', {
+        method: 'GET',
+
+    }).then(response => {
+        responseData = response.json();
+        responseData.then(body => {
+            responseBody = body;
+            document.getElementById("requestLog").innerHTML = "Logs: " + body;
+        })
+    })
 }
 
 function checkRemotePermission(permissionData) {

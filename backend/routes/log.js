@@ -1,8 +1,14 @@
 const express = require('express');
 const router = express.Router();
 
+let recentLogs = [];
+
 router.post('/', function(req) {
-  document.getElementById("requestLog").innerHTML = req.body.toLocaleString();
+  recentLogs.push(req.body);
 });
+
+router.get('/showthem', (req, res) => {
+  res.send(recentLogs);
+})
 
 module.exports = router;
