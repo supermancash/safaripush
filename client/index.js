@@ -12,7 +12,7 @@ async function buttonHandler () {
         responseData = response.json();
         responseData.then(body => {
             responseBody = body;
-            document.getElementById("requestLog").innerHTML = "Logs: " + body;
+            document.getElementById("requestLog").innerHTML = "Logs: " + JSON.stringify(responseBody);
         })
     })
 }
