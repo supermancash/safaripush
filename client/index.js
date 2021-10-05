@@ -9,7 +9,7 @@ function buttonHandler () {
 function checkRemotePermission(permissionData) {
     if (permissionData.permission === 'default') {
         window.safari.pushNotification.requestPermission(
-            'https://safaripushapi.herokuapp.com/',
+            'https://safaripushapi.herokuapp.com',
             'web.app.netlify.webpush',
             {},
             checkRemotePermission
