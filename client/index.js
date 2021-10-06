@@ -1,6 +1,6 @@
 async function buttonHandler () {
     if ('safari' in window && 'pushNotification' in window.safari) {
-        let permissionData = window.safari.pushNotification.permission('web.app.netlify.webpush');
+        let permissionData = window.safari.pushNotification.permission('web.com.safaripushapi');
         checkRemotePermission(permissionData);
         console.log("safari");
     }
@@ -21,8 +21,10 @@ function checkRemotePermission(permissionData) {
     if (permissionData.permission === 'default') {
         window.safari.pushNotification.requestPermission(
             'https://safaripushapi.herokuapp.com',
-            'web.app.netlify.webpush',
-            {},
+            'web.com.safaripushapi',
+            {
+                //'userId': '01234567890123456789'
+            },
             checkRemotePermission
         );
     } else if (permissionData.permission === 'denied') {

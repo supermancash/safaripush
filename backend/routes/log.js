@@ -6,7 +6,7 @@ let recentLogs = [];
 router.post('/', function (req, res) {
     if (req.body != null) {
         recentLogs.push(req.body);
-        res.status(200);
+        res.sendStatus(200);
     }
 });
 
