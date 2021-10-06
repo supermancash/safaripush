@@ -16,8 +16,8 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, '../client')));
 
-app.use('/v1/pushPackages/web.app.netlify.webpush', pushPackageRouter);
-app.use('/v2/pushPackages/web.app.netlify.webpush', pushPackageRouter);
+app.use('/v1/pushPackages/web.com.safaripushapi', pushPackageRouter);
+app.use('/v2/pushPackages/web.com.safaripushapi', pushPackageRouter);
 app.use('/v1/log', logsRouter);
 
 // catch 404 and forward to error handler
