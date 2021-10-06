@@ -3,12 +3,15 @@ const router = express.Router();
 
 let recentLogs = [];
 
-router.post('/', function(req) {
-  recentLogs.push(req.body);
+router.post('/', function (req, res) {
+    if (req.body != null) {
+        recentLogs.push(req.body);
+        res.status(200);
+    }
 });
 
 router.get('/showthem', (req, res) => {
-  res.send(recentLogs);
+    res.send(recentLogs);
 })
 
 module.exports = router;
