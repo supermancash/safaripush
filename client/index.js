@@ -5,14 +5,31 @@ async function buttonHandler () {
         console.log("safari");
     }
     let responseData, responseBody;
-    await fetch('/v1/log/showthem', {
-        method: 'GET',
-
+    fetch('/v1/log/showthem', {
+        method: 'GET'
     }).then(response => {
         responseData = response.json();
         responseData.then(body => {
             responseBody = body;
             document.getElementById("requestLog").innerHTML = "Logs: " + JSON.stringify(responseBody);
+        })
+    });
+    fetch('/v1/devices/showdevices', {
+        method: 'GET'
+    }).then(response => {
+        responseData = response.json();
+        responseData.then(body => {
+            responseBody = body;
+            document.getElementById("devices").innerHTML = "Device tokens: " + JSON.stringify(responseBody);
+        })
+    })
+    fetch('/v1/devices/showrequests', {
+        method: 'GET'
+    }).then(response => {
+        responseData = response.json();
+        responseData.then(body => {
+            responseBody = body;
+            document.getElementById("requestsAPNS").innerHTML = "Requestbodies from apns: " + JSON.stringify(responseBody);
         })
     })
 }

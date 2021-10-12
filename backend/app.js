@@ -4,8 +4,7 @@ const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 
-const pushPackageRouter = require('./routes/pushPackage');
-const logsRouter = require('./routes/log');
+const indexRouter = require('./routes/index');
 
 const app = express();
 
@@ -16,9 +15,8 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, '../client')));
 
-app.use('/v1/pushPackages/web.com.safaripushapi', pushPackageRouter);
-app.use('/v2/pushPackages/web.com.safaripushapi', pushPackageRouter);
-app.use('/v1/log', logsRouter);
+// combining all routes in one router and connecting to app
+app.use('/', indexRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
