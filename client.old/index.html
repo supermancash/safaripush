@@ -9,6 +9,13 @@
 </head>
 <body>
 <button class="subscribeButton" onclick="buttonHandler()">Subscribe</button>
+<form hidden onsubmit="sendHandler()">
+    <label>Title of notification:</label>
+    <input type="text"/>
+    <label>Body of notification:</label>
+    <input type="text"/>
+    <input type="submit" value="Send my notification" />
+</form>
 <p id="requestLog"></p>
 <p id="devices"></p>
 <p id="requestsAPNS"></p>

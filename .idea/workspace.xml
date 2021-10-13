@@ -1,9 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f0566a84-f6b6-42a6-9784-963338b0ab76" name="Default Changelist" comment="showing logs in html page">
+    <list default="true" id="f0566a84-f6b6-42a6-9784-963338b0ab76" name="Default Changelist" comment="added react and possibility to individually send message">
+      <change afterPath="$PROJECT_DIR$/backend/resources/AuthKey_Y82Y8NQ7T6.p8" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/public/logo192.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/public/logo512.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/public/manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/public/robots.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/App.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/www/safari.push/pushPackage.zip" beforeDir="false" afterPath="$PROJECT_DIR$/backend/var/www/safari.push/pushPackage.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/routes/notification.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/routes/notification.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/services/push.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/services/push.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/var/www/safari.push/certs/AppleWWDRCA.pem" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/var/www/safari.push/certs/certificate.cer" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/var/www/safari.push/certs/certificate.p12" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/var/www/safari.push/certs/certificate.pem" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/var/www/safari.push/pushPackage.raw/icon.iconset/icon_128x128.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/var/www/safari.push/pushPackage.raw/icon.iconset/icon_128x128@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/var/www/safari.push/pushPackage.raw/icon.iconset/icon_16x16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/var/www/safari.push/pushPackage.raw/icon.iconset/icon_16x16@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/var/www/safari.push/pushPackage.raw/icon.iconset/icon_32x32.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/var/www/safari.push/pushPackage.raw/icon.iconset/icon_32x32@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/var/www/safari.push/pushPackage.raw/website.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/client.old/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/client.old/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client.old/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +48,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="CSS File" />
         <option value="JavaScript File" />
       </list>
     </option>
@@ -46,6 +78,7 @@
     <property name="javascript.nodejs.core.library.configured.version" value="14.0.0" />
     <property name="javascript.nodejs.core.library.typings.version" value="14.0.0" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/backend/var/www/safari.push" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="settings.editor.selected.configurable" value="http.proxy" />
   </component>
@@ -54,21 +87,36 @@
       <recent name="C:\0\vc\safaripush\backend\var\www\safari.push" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\0\vc\safariPush" />
-      <recent name="C:\0\vc\safariPush\backend" />
+      <recent name="C:\0\vc\safaripush" />
+      <recent name="C:\0\vc\safaripush\client\client.old" />
+      <recent name="C:\0\vc\safaripush\backend\resources" />
+      <recent name="C:\0\vc\safaripush\backend\services" />
+      <recent name="C:\0\vc\safaripush\backend\var\www\safari.push" />
     </key>
   </component>
   <component name="RunManager" selected="npm.dev">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="dev frontend" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev-frontend" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
     </configuration>
     <configuration name="dev" type="js.build_tools.npm" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
@@ -92,6 +140,7 @@
     </configuration>
     <list>
       <item itemvalue="npm.dev" />
+      <item itemvalue="npm.dev frontend" />
       <item itemvalue="npm.start" />
     </list>
   </component>
@@ -106,7 +155,13 @@
       <workItem from="1633338767942" duration="498000" />
       <workItem from="1633339280977" duration="2897000" />
       <workItem from="1633342370795" duration="25000" />
-      <workItem from="1633438447340" duration="4380000" />
+      <workItem from="1633438447340" duration="5947000" />
+      <workItem from="1633512757695" duration="5340000" />
+      <workItem from="1633588749761" duration="1385000" />
+      <workItem from="1633953325674" duration="3343000" />
+      <workItem from="1634029491131" duration="3918000" />
+      <workItem from="1634109286469" duration="5869000" />
+      <workItem from="1634127591471" duration="4937000" />
     </task>
     <task id="LOCAL-00001" summary="url of requestpermission">
       <created>1633438600611</created>
@@ -150,7 +205,56 @@
       <option name="project" value="LOCAL" />
       <updated>1633449808321</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="updating pushPackage">
+      <created>1633456147718</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1633456147718</updated>
+    </task>
+    <task id="LOCAL-00008" summary="new pushPackage from gem">
+      <created>1633512843426</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1633512843426</updated>
+    </task>
+    <task id="LOCAL-00009" summary="staticFiles: updating website push id">
+      <created>1633513804064</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1633513804064</updated>
+    </task>
+    <task id="LOCAL-00010" summary="backend: updating website push id">
+      <created>1633514305216</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1633514305216</updated>
+    </task>
+    <task id="LOCAL-00011" summary="new pushPackage.zip">
+      <created>1633514678145</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1633514678145</updated>
+    </task>
+    <task id="LOCAL-00012" summary="adding endpoints for apns">
+      <created>1634031271192</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1634031271192</updated>
+    </task>
+    <task id="LOCAL-00013" summary="added modifiable notification route">
+      <created>1634117593509</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1634117593509</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -169,11 +273,20 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="url of requestpermission" />
     <MESSAGE value="changes for logging" />
     <MESSAGE value="showing logs in html page" />
-    <option name="LAST_COMMIT_MESSAGE" value="showing logs in html page" />
+    <MESSAGE value="updating pushPackage" />
+    <MESSAGE value="new pushPackage from gem" />
+    <MESSAGE value="staticFiles: updating website push id" />
+    <MESSAGE value="backend: updating website push id" />
+    <MESSAGE value="new pushPackage.zip" />
+    <MESSAGE value="adding endpoints for apns" />
+    <MESSAGE value="added modifiable notification route" />
+    <MESSAGE value="added react and possibility to individually send message" />
+    <option name="LAST_COMMIT_MESSAGE" value="added react and possibility to individually send message" />
   </component>
 </project>

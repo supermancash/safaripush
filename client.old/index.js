@@ -1,4 +1,13 @@
-async function buttonHandler () {
+
+
+
+
+
+
+
+
+
+function buttonHandler () {
     if ('safari' in window && 'pushNotification' in window.safari) {
         let permissionData = window.safari.pushNotification.permission('web.com.safaripushapi');
         checkRemotePermission(permissionData);
@@ -39,9 +48,7 @@ function checkRemotePermission(permissionData) {
         window.safari.pushNotification.requestPermission(
             'https://safaripushapi.herokuapp.com',
             'web.com.safaripushapi',
-            {
-                //'userId': '01234567890123456789'
-            },
+            {},
             checkRemotePermission
         );
     } else if (permissionData.permission === 'denied') {
