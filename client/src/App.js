@@ -2,10 +2,11 @@ import './App.css';
 
 function App() {
     let userToken = null;
+    let permissionData;
 
     function subscribeHandler() {
         if ('safari' in window && 'pushNotification' in window.safari) {
-            let permissionData = window.safari.pushNotification.permission('web.com.safaripushapi');
+            permissionData = window.safari.pushNotification.permission('web.com.safaripushapi');
             checkRemotePermission(permissionData);
             console.log("safari");
         }
@@ -57,6 +58,9 @@ function App() {
 
     function sendHandler(e) {
         e.preventDefault();
+        if(userToken==null) {
+            checkRemotePermission(permissionData);
+        }
         if(userToken!=null){
             const form = document.getElementById("notificationForm");
             const formData = new FormData(form);
