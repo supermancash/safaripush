@@ -71,6 +71,9 @@ function App() {
             const requestPath = "/notifications/send/" + userToken;
             fetch(requestPath, {
                 method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
                 body: JSON.stringify(formObject)
             }).catch((err) => console.log(err));
         }
