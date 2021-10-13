@@ -3,12 +3,12 @@ import NotificationForm from './components/NotificationForm';
 import {useEffect, useState} from "react";
 
 function App() {
-    let permissionData;
+    const [permissionData, setPermissionData] = useState({});
     const [permission, setPermission] = useState("default");
 
     useEffect(() => {
         if ('safari' in window && 'pushNotification' in window.safari) {
-            permissionData = window.safari.pushNotification.permission('web.com.safaripushapi');
+            setPermissionData(window.safari.pushNotification.permission('web.com.safaripushapi'));
             checkRemotePermission(permissionData, true);
         } else {
             document.getElementById("mainDiv").innerHTML = "Please use safari to access this app"
@@ -35,7 +35,6 @@ function App() {
 
     function subscribeHandler() {
         if ('safari' in window && 'pushNotification' in window.safari) {
-            permissionData = window.safari.pushNotification.permission('web.com.safaripushapi');
             checkRemotePermission(permissionData, false);
         }
         let responseData, responseBody;
