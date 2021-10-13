@@ -1,6 +1,8 @@
-import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import NotificationForm from './components/NotificationForm';
 import {useEffect, useState} from "react";
+import Button from 'react-bootstrap/Button';
+import './index.css';
 
 function App() {
     const [permissionData, setPermissionData] = useState({});
@@ -11,7 +13,7 @@ function App() {
             setPermissionData(window.safari.pushNotification.permission('web.com.safaripushapi'));
             checkRemotePermission(permissionData, true);
         } else {
-            document.getElementById("mainDiv").innerHTML = "Please use safari to access this app"
+            //document.getElementById("mainDiv").innerHTML = "Please use safari to access this app"
         }
     });
 
@@ -70,10 +72,11 @@ function App() {
     return (
         <div id="mainDiv" className="App">
             <div id="subscribeButtonDiv">
-                <button className="subscribeButton" onClick={subscribeHandler}>Subscribe</button>
+                <Button className="subscribeButton" onClick={subscribeHandler}>Subscribe</Button>
                 <p id="subscribeParagraph"/>
             </div>
             {permission==="granted" ? <NotificationForm userToken={permissionData.deviceToken}/> : <div/>}
+            <NotificationForm/>
         </div>
     );
 }

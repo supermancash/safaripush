@@ -1,3 +1,6 @@
+import Form from 'react-bootstrap/Form';
+import Button from 'react-bootstrap/Button';
+
 function NotificationForm(props) {
     function sendHandler(e) {
         e.preventDefault();
@@ -20,13 +23,23 @@ function NotificationForm(props) {
 
     return (
         <div>
-            <form onSubmit={(e) => sendHandler(e)} id="notificationForm">
-                <label>Title of notification:</label>
-                <input type="text" name="notificationTitle"/>
-                <label>Body of notification:</label>
-                <input type="text" name="notificationBody"/>
-                <input type="submit" value="Send my notification"/>
-            </form>
+            <Form onSubmit={(e) => sendHandler(e)} id="notificationForm">
+                <Form.Group>
+                    <Form.Label>Title of notification:</Form.Label>
+                    <Form.Control type="text" name="notificationTitle"/>
+                    <Form.Text className="text-muted">
+                        This will appear as the main title of the notification.
+                    </Form.Text>
+                </Form.Group>
+                <Form.Group>
+                    <Form.Label>Body of notification:</Form.Label>
+                    <Form.Control type="text" name="notificationBody"/>
+                    <Form.Text className="text-muted">
+                        This will appear as the description of the notification in a smaller font.
+                    </Form.Text>
+                </Form.Group>
+                <Button variant="primary" type="submit" >Send my notification</Button>
+            </Form>
         </div>
     )
 }
