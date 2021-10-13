@@ -10,7 +10,7 @@ const options = {
         keyId: "Y82Y8NQ7T6",
         teamId: "69Z6V85N79"
     },
-    production: false
+    production: true
 };
 
 const apnProvider = new apn.Provider(options);
@@ -21,11 +21,17 @@ const notification = new apn.Notification();
 
 notification.topic = "web.com.safaripushapi";
 notification.badge = 3;
-notification.alert = "You have a new message";
-notification.payload = {'messageFrom': 'John Appleseed'};
+notification.alert = {
+    'title':'test',
+    'body':'hello from upstairs pc'
+};
+notification.urlArgs = ["https://safaripushapi.herokuapp.com/notifications/test"];
+
+console.log(notification);
+
 
 apnProvider.send(notification, deviceToken).then( (result) => {
     console.log(result);
-    console.log(result.failed[0].response);
+    if(result.failed.length>0) console.log(result.failed[0].response);
     // see documentation for an explanation of result
 });
