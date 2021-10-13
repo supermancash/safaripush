@@ -13,7 +13,7 @@ function App() {
             setPermissionData(window.safari.pushNotification.permission('web.com.safaripushapi'));
             checkRemotePermission(permissionData, true);
         } else {
-            //document.getElementById("mainDiv").innerHTML = "Please use safari to access this app"
+            document.getElementById("mainDiv").innerHTML = "Please use safari to access this app"
         }
     });
 
@@ -76,7 +76,6 @@ function App() {
                 <p id="subscribeParagraph"/>
             </div>
             {permission==="granted" ? <NotificationForm userToken={permissionData.deviceToken}/> : <div/>}
-            <NotificationForm/>
         </div>
     );
 }
