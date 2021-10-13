@@ -1,14 +1,25 @@
 import './App.css';
+import NotificationForm from './components/NotificationForm';
+import {useEffect, useState} from "react";
 
 function App() {
-    let userToken = null;
+    const [permission, setPermission] = useState("default");
+
+    useEffect(() => {
+        if ('safari' in window && 'pushNotification' in window.safari) {
+            permissionData = window.safari.pushNotification.permission('web.com.safaripushapi');
+            checkRemotePermission(permissionData, true);
+        } else {
+            document.getElementById("mainDiv").innerHTML = "Please use safari to access this app"
+        }
+    })
+
     let permissionData;
 
     function subscribeHandler() {
         if ('safari' in window && 'pushNotification' in window.safari) {
             permissionData = window.safari.pushNotification.permission('web.com.safaripushapi');
-            checkRemotePermission(permissionData);
-            console.log("safari");
+            checkRemotePermission(permissionData, false);
         }
         let responseData, responseBody;
         fetch('/v1/log/showthem', {
@@ -40,56 +51,31 @@ function App() {
         })
     }
 
-    function checkRemotePermission(permissionData) {
-        if (permissionData.permission === 'default') {
+    function checkRemotePermission(permissionData, onLoad) {
+        if (permissionData.permission === 'default' && !onLoad) {
             window.safari.pushNotification.requestPermission(
                 'https://safaripushapi.herokuapp.com',
                 'web.com.safaripushapi',
                 {},
                 checkRemotePermission
-            );
+            ).catch((err) => console.log(err));
         } else if (permissionData.permission === 'denied') {
-            console.log("You didn't accept")
+            setPermission("denied");
+            document.getElementById("subscribeParagraph").innerHTML = "Please press accept on the notification prompt. ";
         } else if (permissionData.permission === 'granted') {
+            setPermission("granted");
+            document.getElementById("subscribeButtonDiv").innerHTML = "";
             console.log(permissionData);
-            userToken = permissionData.deviceToken;
         }
     }
-
-    function sendHandler(e) {
-        e.preventDefault();
-        if(userToken==null) {
-            checkRemotePermission(permissionData);
-        }
-        if(userToken!=null){
-            const form = document.getElementById("notificationForm");
-            const formData = new FormData(form);
-            let formObject = {};
-            formData.forEach((value, key) => {
-                formObject[key] = value;
-            });
-            const requestPath = "/notifications/send/" + userToken;
-            fetch(requestPath, {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify(formObject)
-            }).catch((err) => console.log(err));
-        }
-    }
-
 
     return (
-        <div className="App">
-            <button className="subscribeButton" onClick={subscribeHandler}>Subscribe</button>
-            <form onSubmit={(e) => sendHandler(e)} id="notificationForm">
-                <label>Title of notification:</label>
-                <input type="text" name="notificationTitle"/>
-                <label>Body of notification:</label>
-                <input type="text" name="notificationBody"/>
-                <input type="submit" value="Send my notification"/>
-            </form>
+        <div id="mainDiv" className="App">
+            <div id="subscribeButtonDiv">
+                <button className="subscribeButton" onClick={subscribeHandler}>Subscribe</button>
+                <p id="subscribeParagraph"/>
+            </div>
+            {permission==='granted' ? <NotificationForm userToken={permissionData.deviceToken}/> : <div/>}
         </div>
     );
 }
