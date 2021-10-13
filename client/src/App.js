@@ -3,6 +3,7 @@ import NotificationForm from './components/NotificationForm';
 import {useEffect, useState} from "react";
 
 function App() {
+    let permissionData;
     const [permission, setPermission] = useState("default");
 
     useEffect(() => {
@@ -31,8 +32,6 @@ function App() {
             console.log(permissionData);
         }
     }
-
-    let permissionData;
 
     function subscribeHandler() {
         if ('safari' in window && 'pushNotification' in window.safari) {
