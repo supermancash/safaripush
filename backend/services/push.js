@@ -3,7 +3,7 @@ const path = require('path');
 const fs = require('fs');
 
 const pushNotification = (deviceToken, title, body) => {
-    const pathToKey = path.resolve('../resources/AuthKey_Y82Y8NQ7T6.p8');
+    const pathToKey = path.join(__dirname, '../resources/AuthKey_Y82Y8NQ7T6.p8');
 
     const options = {
         token: {

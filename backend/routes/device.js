@@ -12,12 +12,10 @@ router.post('/:newDevice/registrations/web.com.safaripushapi', (req, res) => {
 
 router.get('/showdevices', (req, res) => {
     res.send(devices);
-    res.sendStatus(200);
 });
 
 router.get('/showrequests', (req, res) => {
     res.send(requestBodies);
-    res.sendStatus(200);
 });
 
 module.exports = router;

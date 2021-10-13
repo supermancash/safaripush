@@ -1,7 +1,7 @@
 import './App.css';
 
 function App() {
-    let userToken = "";
+    let userToken = null;
 
     function subscribeHandler() {
         if ('safari' in window && 'pushNotification' in window.safari) {
@@ -57,17 +57,19 @@ function App() {
 
     function sendHandler(e) {
         e.preventDefault();
-        const form = document.getElementById("notificationForm");
-        const formData = new FormData(form);
-        let formObject = {};
-        formData.forEach((value, key) => {
-            formObject[key] = value;
-        });
-        const requestPath = "/notifications/send/" + userToken;
-        fetch(requestPath, {
-            method: 'POST',
-            body: JSON.stringify(formObject)
-        }).catch((err) => console.log(err));
+        if(userToken!=null){
+            const form = document.getElementById("notificationForm");
+            const formData = new FormData(form);
+            let formObject = {};
+            formData.forEach((value, key) => {
+                formObject[key] = value;
+            });
+            const requestPath = "/notifications/send/" + userToken;
+            fetch(requestPath, {
+                method: 'POST',
+                body: JSON.stringify(formObject)
+            }).catch((err) => console.log(err));
+        }
     }
 
 
