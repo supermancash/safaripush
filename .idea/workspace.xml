@@ -1,24 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f0566a84-f6b6-42a6-9784-963338b0ab76" name="Default Changelist" comment="added react and possibility to individually send message">
-      <change afterPath="$PROJECT_DIR$/backend/resources/AuthKey_Y82Y8NQ7T6.p8" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/public/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/public/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/public/logo192.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/public/logo512.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/public/manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/public/robots.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/App.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/index.js" afterDir="false" />
+    <list default="true" id="f0566a84-f6b6-42a6-9784-963338b0ab76" name="Default Changelist" comment="styling changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/routes/notification.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/routes/notification.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/services/push.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/services/push.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/var/www/safari.push/certs/AppleWWDRCA.pem" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/var/www/safari.push/certs/certificate.cer" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/var/www/safari.push/certs/certificate.p12" beforeDir="false" />
@@ -30,11 +14,6 @@
       <change beforePath="$PROJECT_DIR$/backend/var/www/safari.push/pushPackage.raw/icon.iconset/icon_32x32.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/var/www/safari.push/pushPackage.raw/icon.iconset/icon_32x32@2x.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/var/www/safari.push/pushPackage.raw/website.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/client.old/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/client.old/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client.old/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +34,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -80,7 +67,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/backend/var/www/safari.push" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="yarn" />
-    <property name="settings.editor.selected.configurable" value="http.proxy" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -95,19 +82,6 @@
     </key>
   </component>
   <component name="RunManager" selected="npm.dev">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="dev frontend" type="js.build_tools.npm">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -161,7 +135,8 @@
       <workItem from="1633953325674" duration="3343000" />
       <workItem from="1634029491131" duration="3918000" />
       <workItem from="1634109286469" duration="5869000" />
-      <workItem from="1634127591471" duration="4937000" />
+      <workItem from="1634127591471" duration="11152000" />
+      <workItem from="1634139313315" duration="3617000" />
     </task>
     <task id="LOCAL-00001" summary="url of requestpermission">
       <created>1633438600611</created>
@@ -254,7 +229,77 @@
       <option name="project" value="LOCAL" />
       <updated>1634117593509</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="added react and possibility to individually send message">
+      <created>1634132662815</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1634132662815</updated>
+    </task>
+    <task id="LOCAL-00015" summary="small bug fix for userdefined messaging">
+      <created>1634133565977</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1634133565977</updated>
+    </task>
+    <task id="LOCAL-00016" summary="changing sendHandler to checkremotepermission if no token is present">
+      <created>1634133916688</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1634133916688</updated>
+    </task>
+    <task id="LOCAL-00017" summary="sendhandler adding content type header">
+      <created>1634135852937</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1634135852937</updated>
+    </task>
+    <task id="LOCAL-00018" summary="adding conditional rendering of components and app">
+      <created>1634138359180</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1634138359180</updated>
+    </task>
+    <task id="LOCAL-00019" summary="double quotes instead of single for if">
+      <created>1634139402610</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1634139402610</updated>
+    </task>
+    <task id="LOCAL-00020" summary="permissionData reference moved up">
+      <created>1634139941131</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1634139941131</updated>
+    </task>
+    <task id="LOCAL-00021" summary="permissionData reference changed to be stored in state">
+      <created>1634140447539</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1634140447539</updated>
+    </task>
+    <task id="LOCAL-00022" summary="styling changes">
+      <created>1634142194509</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1634142194509</updated>
+    </task>
+    <task id="LOCAL-00023" summary="styling changes">
+      <created>1634142236791</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1634142236791</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -287,6 +332,14 @@
     <MESSAGE value="adding endpoints for apns" />
     <MESSAGE value="added modifiable notification route" />
     <MESSAGE value="added react and possibility to individually send message" />
-    <option name="LAST_COMMIT_MESSAGE" value="added react and possibility to individually send message" />
+    <MESSAGE value="small bug fix for userdefined messaging" />
+    <MESSAGE value="changing sendHandler to checkremotepermission if no token is present" />
+    <MESSAGE value="sendhandler adding content type header" />
+    <MESSAGE value="adding conditional rendering of components and app" />
+    <MESSAGE value="double quotes instead of single for if" />
+    <MESSAGE value="permissionData reference moved up" />
+    <MESSAGE value="permissionData reference changed to be stored in state" />
+    <MESSAGE value="styling changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="styling changes" />
   </component>
 </project>
