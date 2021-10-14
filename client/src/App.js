@@ -2,6 +2,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import NotificationForm from './components/NotificationForm';
 import {useEffect, useState} from "react";
 import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card'
 import './index.css';
 
 function App() {
@@ -27,16 +28,15 @@ function App() {
             ).catch((err) => console.log(err));
         } else if (permissionData.permission === 'denied') {
             setPermission("denied");
-            document.getElementById("subscribeParagraph").innerHTML = "Please press accept on the notification prompt. ";
         } else if (permissionData.permission === 'granted') {
             setPermission("granted");
-            document.getElementById("subscribeButtonDiv").innerHTML = "";
             console.log(permissionData);
         }
     }
 
     function subscribeHandler() {
         if ('safari' in window && 'pushNotification' in window.safari) {
+            setPermissionData(window.safari.pushNotification.permission('web.com.safaripushapi'));
             checkRemotePermission(permissionData, false);
         }
         let responseData, responseBody;
@@ -71,11 +71,26 @@ function App() {
 
     return (
         <div id="mainDiv" className="App">
-            <div id="subscribeButtonDiv">
-                <Button className="subscribeButton" onClick={subscribeHandler}>Subscribe</Button>
-                <p id="subscribeParagraph"/>
-            </div>
-            {permission==="granted" ? <NotificationForm userToken={permissionData.deviceToken}/> : <div/>}
+            {permission === "default" || permission === "denied" ?
+                <div id="subscribeButtonDiv">
+                    <Card border="primary" bg="light">
+                        <Card.Body>
+                            <Button className="subscribeButton" onClick={subscribeHandler}>Subscribe to safari push
+                                notifications</Button>
+                            <Card.Text>Please press accept on the prompt after pressing the button</Card.Text>
+                        </Card.Body>
+                    </Card>
+                </div>
+                :
+                <div>
+                    <Card border="primary" bg="light">
+                        <Card.Body>
+                            <NotificationForm userToken={permissionData.deviceToken}/>
+                        </Card.Body>
+                    </Card>
+
+                </div>
+            }
         </div>
     );
 }
