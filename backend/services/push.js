@@ -1,6 +1,6 @@
-const apn = require('node-apn');
-const path = require('path');
-const fs = require('fs');
+import apn from 'node-apn';
+import path from 'path';
+import fs from 'fs';
 
 const pushNotification = (deviceToken, title, body) => {
     const pathToKey = path.join(__dirname, '../resources/AuthKey_Y82Y8NQ7T6.p8');
@@ -21,15 +21,17 @@ const pushNotification = (deviceToken, title, body) => {
     notification.topic = "web.com.safaripushapi";
     notification.badge = 3;
     notification.alert = {
-        'title':title,
-        'body':body
+        'title': title,
+        'body': body
     };
     notification.urlArgs = ["test"];
-    apnProvider.send(notification, deviceToken).then( (result) => {
-        console.log(result);
-        if(result.failed.length>0) console.log(result.failed[0].response);
-        // see documentation for an explanation of result
+    apnProvider.send(notification, deviceToken).then((result) => {
+        if (result.failed.length > 0) {
+            console.log(result.failed[0].response);
+            return false;
+        }
+        return true;
     });
 }
 
-module.exports = pushNotification;
+export default pushNotification;

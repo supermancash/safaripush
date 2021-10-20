@@ -1,8 +1,9 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import NotificationForm from './components/NotificationForm';
 import {useEffect, useState} from "react";
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card'
+
+import NotificationForm from './components/NotificationForm';
 import './index.css';
 
 function App() {

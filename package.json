@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "cd client && npm run build && cd .. && node ./backend/bin/www",
-    "dev": "concurrently \"nodemon ./backend/bin/www\" \"cd client && react-scripts start\"",
-    "dev-frontend": "cd client && react-scripts start"
+    "start": "cd client && react-scripts build && node .././backend/server.js",
+    "dev": "concurrently \"nodemon ./backend/server.js\" \"cd client && react-scripts start\"",
+    "client": "cd client && react-scripts start",
+    "server:dev": "nodemon ./backend/server.js"
   },
   "keywords": [],
   "author": "",
@@ -23,7 +24,9 @@
     "concurrently": "^6.2.1",
     "cookie-parser": "^1.4.5",
     "cra-template": "1.1.2",
+    "debug": "^4.3.2",
     "express": "^4.17.1",
+    "http-errors": "^1.8.0",
     "morgan": "^1.10.0",
     "node-apn": "^3.0.0",
     "nodemon": "^2.0.13",
@@ -33,5 +36,6 @@
     "react-scripts": "4.0.3",
     "typescript": "^4.4.2",
     "web-vitals": "^2.1.0"
-  }
+  },
+  "type": "module"
 }

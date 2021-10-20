@@ -1,19 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:heroku" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="f0566a84-f6b6-42a6-9784-963338b0ab76" name="Default Changelist" comment="styling changes">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/www/safari.push/certs/AppleWWDRCA.pem" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/www/safari.push/certs/certificate.cer" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/www/safari.push/certs/certificate.p12" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/www/safari.push/certs/certificate.pem" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/www/safari.push/pushPackage.raw/icon.iconset/icon_128x128.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/www/safari.push/pushPackage.raw/icon.iconset/icon_128x128@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/www/safari.push/pushPackage.raw/icon.iconset/icon_16x16.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/www/safari.push/pushPackage.raw/icon.iconset/icon_16x16@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/www/safari.push/pushPackage.raw/icon.iconset/icon_32x32.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/www/safari.push/pushPackage.raw/icon.iconset/icon_32x32@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/www/safari.push/pushPackage.raw/website.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/bin/www" beforeDir="false" afterPath="$PROJECT_DIR$/backend/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/routes/device.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/routes/device.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/routes/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/routes/log.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/routes/log.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/routes/notification.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/routes/notification.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/routes/pushPackage.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/routes/pushPackage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/services/push.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/services/push.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client.old/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client.old/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client.old/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/public/robots.txt" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/robots.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web.config" beforeDir="false" afterPath="$PROJECT_DIR$/web.config" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,31 +88,44 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="javascript.nodejs.core.library.configured.version" value="14.0.0" />
-    <property name="javascript.nodejs.core.library.typings.version" value="14.0.0" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/backend/var/www/safari.push" />
+    <property name="javascript.nodejs.core.library.configured.version" value="14.15.1" />
+    <property name="javascript.nodejs.core.library.typings.version" value="14.17.27" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\0\vc\safaripush\backend\var\www\safari.push" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\0\vc\safaripushapi\backend" />
       <recent name="C:\0\vc\safaripush" />
       <recent name="C:\0\vc\safaripush\client\client.old" />
       <recent name="C:\0\vc\safaripush\backend\resources" />
       <recent name="C:\0\vc\safaripush\backend\services" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\0\vc\safaripush\backend\var\www\safari.push" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.dev">
-    <configuration name="dev frontend" type="js.build_tools.npm">
+  <component name="RunManager" selected="npm.dev backend">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="dev backend" type="js.build_tools.npm">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
       <scripts>
-        <script value="dev-frontend" />
+        <script value="server:dev" />
       </scripts>
       <node-interpreter value="project" />
       <envs />
@@ -114,7 +153,7 @@
     </configuration>
     <list>
       <item itemvalue="npm.dev" />
-      <item itemvalue="npm.dev frontend" />
+      <item itemvalue="npm.dev backend" />
       <item itemvalue="npm.start" />
     </list>
   </component>
@@ -137,6 +176,8 @@
       <workItem from="1634109286469" duration="5869000" />
       <workItem from="1634127591471" duration="11152000" />
       <workItem from="1634139313315" duration="3617000" />
+      <workItem from="1634486625434" duration="989000" />
+      <workItem from="1634630474139" duration="6526000" />
     </task>
     <task id="LOCAL-00001" summary="url of requestpermission">
       <created>1633438600611</created>
@@ -341,5 +382,35 @@
     <MESSAGE value="permissionData reference changed to be stored in state" />
     <MESSAGE value="styling changes" />
     <option name="LAST_COMMIT_MESSAGE" value="styling changes" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="153" y="60" width="1089" height="713" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1634487523342">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="153" y="60" width="1089" height="713" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1634487523342" />
+    <state width="1497" height="117" key="GridCell.Tab.0.bottom" timestamp="1634660338973">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1497" height="117" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1634660338973" />
+    <state width="1497" height="117" key="GridCell.Tab.0.center" timestamp="1634660338973">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1497" height="117" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1634660338973" />
+    <state width="1497" height="117" key="GridCell.Tab.0.left" timestamp="1634660338973">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1497" height="117" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1634660338973" />
+    <state width="1497" height="117" key="GridCell.Tab.0.right" timestamp="1634660338973">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1497" height="117" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1634660338973" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1634660011485">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1634660011485" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1634660009489">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1634660009489" />
   </component>
 </project>

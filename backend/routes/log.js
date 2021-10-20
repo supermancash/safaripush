@@ -1,4 +1,5 @@
-const express = require('express');
+import express from 'express';
+
 const router = express.Router();
 
 let recentLogs = [];
@@ -14,4 +15,4 @@ router.get('/showthem', (req, res) => {
     res.send(recentLogs);
 })
 
-module.exports = router;
+export default router;
